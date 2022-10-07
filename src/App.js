@@ -51,8 +51,8 @@ function App() {
         </h2>
         <p>
           I found a passion for programming in the first year that I attended
-          ESU for engineering. During that year I took a class that led me to a
-          degree switch to Computer Science. In November of 2022, I married my
+          ESU for engineering. During that year, I took a class which led me to
+          a degree switch to Computer Science. In November of 2022, I married my
           high school sweetheart who was attending classes in Manhattan, Kansas.
           I decided to take the KSU software development Bootcamp to get into
           the field of my dreams faster. I finished the Bootcamp in November of
