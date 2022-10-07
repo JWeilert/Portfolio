@@ -1,38 +1,96 @@
 .App {
   text-align: center;
+  color: rgb(255, 255, 255);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav{
+  background-color: rgb(15, 111, 195);
+  padding: .5em;
+  margin-bottom: .5em;
+  position: sticky;
+  top: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#firstBox{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.firstBoxContent{
+  width: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+span{
+  color: crimson;
+}
+
+.firstBoxContent img{
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+  border: .25em dotted rgb(15, 111, 195);
+}
+
+
+#aboutMe p{
+  margin: auto;
+  width: 60%;
+}
+
+#skillSet{
+  display: flex;
+  justify-content:space-around;
+}
+
+.skill{
+  width: 6em;
+  height: 6em;
+  height: auto;
+  color: crimson;
+
+}
+
+.skill img{
+  width: 100%;
+  background-color: aliceblue;
+  border-radius: 50%;
+}
+
+.skill p{
+background-color: rgb(255, 255, 255);
+border-radius: 1em;
+}
+
+#footer{
+background-color: black;
+margin-top: 2em;
+padding: 1em;
+}
+
+.projects{
+  border-radius: 2em;
+  width: 50%;
+  background-color: rgb(0, 0, 0);
+  margin: 1em auto;
+  padding: .25em;
+}
+
+.projects img{
+  width: 75%;
+  border-radius: 2em;
+}
+
+.projects h2{
+color: crimson;
+}
+
+.projects a{
+  color: crimson;
+  margin: 1em;
+}
+
+.projects p{
+  margin: 1em auto;
+  width: 75%;
 }
