@@ -5,10 +5,47 @@
 
 nav{
   background-color: rgb(15, 111, 195);
-  padding: .5em;
   margin-bottom: .5em;
   position: sticky;
   top: 0;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  border-bottom: .2em solid black;
+}
+
+nav div{
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav img{
+  width: 2em;
+  height: 2em;
+}
+nav a:link { 
+  text-decoration: none; 
+  color: rgb(255, 255, 255);
+}
+
+
+nav a:visited { 
+  text-decoration: none; 
+  color: rgb(255, 255, 255);
+}
+
+
+nav a:hover { 
+  text-decoration: none; 
+  color: crimson
+}
+
+
+nav a:active { 
+  text-decoration: none; 
+  color: rgb(255, 255, 255);
 }
 
 #firstBox{
@@ -29,9 +66,17 @@ span{
   width: 50%;
   height: auto;
   border-radius: 50%;
-  border: .25em dotted rgb(15, 111, 195);
+  border: .25em dotted crimson;;
 }
 
+#aboutMe{
+  padding: 1em;
+}
+
+#aboutMe h2{
+  margin: .5em
+
+}
 
 #aboutMe p{
   margin: auto;
@@ -58,7 +103,8 @@ span{
 }
 
 .skill p{
-background-color: rgb(255, 255, 255);
+color: white;
+background-color: rgb(15, 111, 195);
 border-radius: 1em;
 }
 
@@ -86,11 +132,34 @@ color: crimson;
 }
 
 .projects a{
-  color: crimson;
+  color: rgb(15, 111, 195);
   margin: 1em;
 }
 
 .projects p{
   margin: 1em auto;
   width: 75%;
+}
+
+.projects a:link { 
+  text-decoration: none; 
+  color: rgb(15, 111, 195)
+}
+
+
+.projects a:visited { 
+  text-decoration: none; 
+  color: rgb(15, 111, 195)
+}
+
+
+.projects a:hover { 
+  text-decoration: none; 
+  color: crimson
+}
+
+
+.projects a:active { 
+  text-decoration: none; 
+  color: rgb(15, 111, 195)
 }
