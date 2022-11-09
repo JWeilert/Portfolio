@@ -1,4 +1,5 @@
-import "./App.css";
+import "./CSS/App.css";
+import "./CSS/Animation.css";
 import Profile from "./Images/Profile.jpeg";
 import React from "./Images/React.webp";
 import JavaScript from "./Images/JavaScript.png";
@@ -10,10 +11,31 @@ import Appointments from "./Images/Appointment.png";
 import WeatherApp from "./Images/WeatherApp.png";
 import Dictionary from "./Images/Dictionary.png";
 import GitHub from "./Images/GitHub.png";
-
+import Show from "./Images/Show.mp4";
+import CarVideo from "./Images/CarVideo.mp4";
+import SearchVideo from "./Images/SearchVideo.mp4";
+import WeatherVideo from "./Images/WeatherVideo.mp4";
 function App() {
+  const play = () => {
+    console.log("Hi");
+  };
   return (
     <div className="App">
+      <div class="area">
+        <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
       <nav>
         <div>
           <a href="#about">About</a>
@@ -52,7 +74,7 @@ function App() {
         <p>
           I found a passion for programming in the first year that I attended
           ESU for engineering. During that year, I took a class which led me to
-          a degree switch to Computer Science. In November of 2022, I married my
+          a career switch to Computer Science. In November of 2022, I married my
           high school sweetheart who was attending classes in Manhattan, Kansas.
           I decided to take the KSU software development Bootcamp to get into
           the field of my dreams faster. I finished the Bootcamp in November of
@@ -97,9 +119,43 @@ function App() {
       <hr id="project" />
       <div id="projectContainer">
         <h2>Projects</h2>
+        <p>
+          <span>Hover or Click to play example</span>
+        </p>
+        <div className="projects">
+          <h2>SoftNotes</h2>
+          <video
+            onMouseOver={(event) => event.target.play()}
+            onMouseOut={(event) => event.target.pause()}
+            src={Show}
+            type="video/mp4"
+            muted
+            loop
+          />
+          <p>
+            This was a group of 3 project and my final project for my KSU
+            bootcamp. We created an CRUD note taking application that had a a
+            fully working signup and aitinification page. This aplication had
+            backend connectivity to <span>MongoDB</span>. I handled everything
+            frontend and frontend functionality using <span>1,300+</span> lines
+            of CSS.
+          </p>
+          <p>
+            <a href="https://github.com/cladden77/milestone-2-project">
+              GitHub Link
+            </a>
+          </p>
+        </div>
         <div className="projects">
           <h2>Car Shop Appointment Maker</h2>
-          <img src={Appointments} />
+          <video
+            onMouseOver={(event) => event.target.play()}
+            onMouseOut={(event) => event.target.pause()}
+            src={CarVideo}
+            type="video/mp4"
+            muted
+            loop
+          />
           <p>
             This was a group of 3 project. We created an appointment making
             application for a car shop. This aplication has an interactive
@@ -118,7 +174,14 @@ function App() {
         </div>
         <div className="projects">
           <h2>Weather App</h2>
-          <img src={WeatherApp} />
+          <video
+            onMouseOver={(event) => event.target.play()}
+            onMouseOut={(event) => event.target.pause()}
+            src={WeatherVideo}
+            type="video/mp4"
+            muted
+            loop
+          />
           <p>
             Although not complete, this is a solo project I am creating to
             display the current and future weather of a searched Zip code using
@@ -135,7 +198,14 @@ function App() {
         </div>
         <div className="projects">
           <h2>Dictionary</h2>
-          <img src={Dictionary} />
+          <video
+            onMouseOver={(event) => event.target.play()}
+            onMouseOut={(event) => event.target.pause()}
+            src={SearchVideo}
+            type="video/mp4"
+            muted
+            loop
+          />
           <p>
             This was my first solo project where I created a Dictionary that
             searches and displays definitions as you type.
