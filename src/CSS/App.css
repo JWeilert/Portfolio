@@ -16,6 +16,7 @@ nav{
   justify-content: space-around;
   color: white;
   border-bottom: .2em solid black;
+  z-index: 10;
 }
 
 nav div{
@@ -29,6 +30,12 @@ nav img{
   width: 2em;
   height: 2em;
   cursor: pointer;
+}
+
+nav a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -123,6 +130,11 @@ margin-top: 2em;
 padding: 1em;
 }
 
+.disc{
+  margin: auto;
+  width: 90%;
+}
+
 .projects{
   border-radius: 2em;
   width: 65%;
@@ -130,6 +142,8 @@ padding: 1em;
   box-shadow: 0 0 10px #818181;
   margin: 2em auto;
   padding: .25em;
+  position: relative;
+  top: 0
 }
 
 .projects img, video{
@@ -137,9 +151,13 @@ padding: 1em;
   border-radius: 2em;
   transition: 1.5s;
   border: solid 2px crimson;
+  z-index: 1;
 }
 
-
+.projects div{
+  position: relative;
+  top: 0
+}
 
 .projects h2{
 color: crimson;
@@ -181,6 +199,7 @@ color: crimson;
 
 video:hover{
   transform: scale(1.25);
+  z-index: 100;
 }
 
 @media(max-width: 950px){

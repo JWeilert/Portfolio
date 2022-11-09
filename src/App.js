@@ -8,11 +8,13 @@ import Python from "./Images/Python.png";
 import Redux from "./Images/Redux.png";
 import PgAdmin from "./Images/PgAdmin.png";
 import GitHub from "./Images/GitHub.png";
+import PlayImg from "./Images/PlayImg.png";
 
-import CarVideo from "./Images/CarVideo.mp4";
-import SearchVideo from "./Images/SearchVideo.mp4";
-import WeatherVideo from "./Images/WeatherVideo.mp4";
 import NoteVideo from "./Images/NoteVideo.mp4";
+import CarVideo from "./Images/CarVideo.mp4";
+import WeatherVideo from "./Images/WeatherVideo.mp4";
+import SearchVideo from "./Images/SearchVideo.mp4";
+
 function App() {
   return (
     <div className="App">
@@ -69,7 +71,7 @@ function App() {
         <p>
           I found a passion for programming in the first year that I attended
           ESU for engineering. During that year, I took a class which led me to
-          a career switch to Computer Science. In November of 2022, I married my
+          a degree switch to Computer Science. In November of 2022, I married my
           high school sweetheart who was attending classes in Manhattan, Kansas.
           I decided to take the KSU software development Bootcamp to get into
           the field of my dreams faster. I finished the Bootcamp in November of
@@ -105,7 +107,7 @@ function App() {
             <p>Python</p>
           </div>
         </div>
-        <p>
+        <p className="disc">
           Although I am currently more comfortable with frontend development, I
           am <span>Striving</span> to better my backend skills on my own time
           for future career use.
@@ -122,13 +124,20 @@ function App() {
         <div className="projects">
           <h2>SoftNotes</h2>
           <video
+            style={{
+              backgroundImage: `url(${PlayImg})`,
+              backgroundPosition: "center",
+              backgroundSize: "30%",
+              backgroundRepeat: "no-repeat",
+            }}
             onMouseOver={(event) => event.target.play()}
             onMouseOut={(event) => event.target.pause()}
+            onClick={(event) => event.target.play()}
             src={NoteVideo}
             type="video/mp4"
-            muted
             loop
             playsInline
+            preload="auto"
           />
           <p>
             This was a group of 3 project and my final project for my KSU
@@ -145,15 +154,22 @@ function App() {
           </p>
         </div>
         <div className="projects">
-          <h2>Car Shop Appointment Maker</h2>
+          <h2>Body Shop Appointment Maker</h2>
           <video
+            style={{
+              backgroundImage: `url(${PlayImg})`,
+              backgroundPosition: "center",
+              backgroundSize: "30%",
+              backgroundRepeat: "no-repeat",
+            }}
             onMouseOver={(event) => event.target.play()}
             onMouseOut={(event) => event.target.pause()}
+            onClick={(event) => event.target.play()}
             src={CarVideo}
             type="video/mp4"
-            muted
             playsInline
             loop
+            preload="auto"
           />
           <p>
             This was a group of 3 project. We created an appointment making
@@ -174,12 +190,19 @@ function App() {
         <div className="projects">
           <h2>Weather App</h2>
           <video
+            style={{
+              backgroundImage: `url(${PlayImg})`,
+              backgroundPosition: "center",
+              backgroundSize: "30%",
+              backgroundRepeat: "no-repeat",
+            }}
             onMouseOver={(event) => event.target.play()}
+            onClick={(event) => event.target.play()}
             onMouseOut={(event) => event.target.pause()}
             src={WeatherVideo}
             type="video/mp4"
-            muted
             loop
+            preload="auto"
             playsInline
           />
           <p>
@@ -199,14 +222,22 @@ function App() {
         <div className="projects">
           <h2>Dictionary</h2>
           <video
+            style={{
+              backgroundImage: `url(${PlayImg})`,
+              backgroundPosition: "center",
+              backgroundSize: "30%",
+              backgroundRepeat: "no-repeat",
+            }}
             onMouseOver={(event) => event.target.play()}
+            onClick={(event) => event.target.play()}
             onMouseOut={(event) => event.target.pause()}
             src={SearchVideo}
             type="video/mp4"
-            muted
             loop
             playsInline
+            preload="auto"
           />
+
           <p>
             This was my first solo project where I created a Dictionary that
             searches and displays definitions as you type.
