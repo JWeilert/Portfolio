@@ -1,3 +1,7 @@
+*{
+  cursor: default;
+}
+
 .App {
   text-align: center;
   color: rgb(255, 255, 255);
@@ -24,10 +28,14 @@ nav div{
 nav img{
   width: 2em;
   height: 2em;
+  cursor: pointer;
 }
+
+
 nav a:link { 
   text-decoration: none; 
   color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 
 
@@ -86,6 +94,7 @@ span{
 #skillSet{
   display: flex;
   justify-content:space-around;
+  flex-wrap: wrap;
 }
 
 .skill{
@@ -93,7 +102,7 @@ span{
   height: 6em;
   height: auto;
   color: crimson;
-
+  margin: 2em;
 }
 
 .skill img{
@@ -116,9 +125,10 @@ padding: 1em;
 
 .projects{
   border-radius: 2em;
-  width: 50%;
+  width: 65%;
   background-color: rgb(0, 0, 0);
-  margin: 1em auto;
+  box-shadow: 0 0 10px #818181;
+  margin: 2em auto;
   padding: .25em;
 }
 
@@ -126,6 +136,7 @@ padding: 1em;
   width: 75%;
   border-radius: 2em;
   transition: 1.5s;
+  border: solid 2px crimson;
 }
 
 
@@ -137,6 +148,7 @@ color: crimson;
 .projects a{
   color: rgb(15, 111, 195);
   margin: 1em;
+  cursor: pointer;
 }
 
 .projects p{
@@ -168,5 +180,24 @@ color: crimson;
 }
 
 video:hover{
-  transform: scale(2);
+  transform: scale(1.25);
+}
+
+@media(max-width: 950px){
+  .projects{
+    width: 95%;
+    padding: .25em;
+  }
+  .projects video{
+    width: 80%;
+  }
+  .projects p{
+    width: 80%;
+  }
+  #aboutMe p{
+    width: 80%;
+  }
+  .firstBoxContent img{
+    width: 75%;
+  }
 }

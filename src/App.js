@@ -7,18 +7,13 @@ import Node from "./Images/Node.png";
 import Python from "./Images/Python.png";
 import Redux from "./Images/Redux.png";
 import PgAdmin from "./Images/PgAdmin.png";
-import Appointments from "./Images/Appointment.png";
-import WeatherApp from "./Images/WeatherApp.png";
-import Dictionary from "./Images/Dictionary.png";
 import GitHub from "./Images/GitHub.png";
 import Show from "./Images/Show.mp4";
 import CarVideo from "./Images/CarVideo.mp4";
 import SearchVideo from "./Images/SearchVideo.mp4";
 import WeatherVideo from "./Images/WeatherVideo.mp4";
+import NoteVideo from "./Images/NoteVideo.mp4";
 function App() {
-  const play = () => {
-    console.log("Hi");
-  };
   return (
     <div className="App">
       <div class="area">
@@ -48,7 +43,7 @@ function App() {
         </div>
         <div>
           <a href="https://github.com/JWeilert">
-            <img src={GitHub} />
+            <img src={GitHub} alt="GitHub" />
           </a>
         </div>
       </nav>
@@ -86,27 +81,27 @@ function App() {
         <h2>Skills</h2>
         <div id="skillSet">
           <div className="skill">
-            <img src={React} />
+            <img src={React} alt="React Logo" />
             <p>React</p>
           </div>
           <div className="skill">
-            <img src={JavaScript} />
+            <img src={JavaScript} alt="JavaScript Logo" />
             <p>JavaScript</p>
           </div>
           <div className="skill">
-            <img src={Node} />
+            <img src={Node} alt="Node.JS Logo" />
             <p>Node.js</p>
           </div>
           <div className="skill">
-            <img src={PgAdmin} />
+            <img src={PgAdmin} alt="PgAdmin Logo" />
             <p>PgAdmin</p>
           </div>
           <div className="skill">
-            <img src={Redux} />
+            <img src={Redux} alt="Redux Logo" />
             <p>Redux</p>
           </div>
           <div className="skill">
-            <img src={Python} />
+            <img src={Python} alt="Python Logo" />
             <p>Python</p>
           </div>
         </div>
@@ -120,28 +115,30 @@ function App() {
       <div id="projectContainer">
         <h2>Projects</h2>
         <p>
-          <span>Hover or Click to play example</span>
+          <p>
+            <span>Hover</span> or <span>Click</span> to play example
+          </p>
         </p>
         <div className="projects">
           <h2>SoftNotes</h2>
           <video
             onMouseOver={(event) => event.target.play()}
             onMouseOut={(event) => event.target.pause()}
-            src={Show}
+            src={NoteVideo}
             type="video/mp4"
             muted
             loop
           />
           <p>
             This was a group of 3 project and my final project for my KSU
-            bootcamp. We created an CRUD note taking application that had a a
-            fully working signup and aitinification page. This aplication had
-            backend connectivity to <span>MongoDB</span>. I handled everything
-            frontend and frontend functionality using <span>1,300+</span> lines
-            of CSS.
+            Bootcamp. We created a <span>CRUD</span> note-taking application
+            that had a fully working signup and authentication page. This
+            application had backend connectivity to <span>MongoDB</span>. I
+            handled everything frontend and frontend functionality using React
+            hooks, Js, and <span>1,300+ </span> lines of CSS.
           </p>
           <p>
-            <a href="https://github.com/cladden77/milestone-2-project">
+            <a href="https://github.com/cladden77/milestone-3-project">
               GitHub Link
             </a>
           </p>
@@ -158,10 +155,10 @@ function App() {
           />
           <p>
             This was a group of 3 project. We created an appointment making
-            application for a car shop. This aplication has an interactive
+            application for a body shop. This aplication has an interactive
             calender and backend connectivity to <span>PgAdmin</span>. I focused
-            on the creation and style of the calendar along with sending data to
-            the database.
+            on the creation and style of the calendar along with helping to send
+            data to the database.
           </p>
           <p>
             <a href="http://milestone-2-project.vercel.app/">Vercel Link</a>
@@ -185,7 +182,7 @@ function App() {
           <p>
             Although not complete, this is a solo project I am creating to
             display the current and future weather of a searched Zip code using
-            two API's.
+            two <span>API's</span>.
           </p>
           <p>
             <a href="https://weatherapp-jweilert.vercel.app">Vercel Link</a>
