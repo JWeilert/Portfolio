@@ -8,7 +8,7 @@ import Python from "./Images/Python.png";
 import Redux from "./Images/Redux.png";
 import PgAdmin from "./Images/PgAdmin.png";
 import GitHub from "./Images/GitHub.png";
-import Show from "./Images/Show.mp4";
+
 import CarVideo from "./Images/CarVideo.mp4";
 import SearchVideo from "./Images/SearchVideo.mp4";
 import WeatherVideo from "./Images/WeatherVideo.mp4";
