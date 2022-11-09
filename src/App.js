@@ -128,6 +128,7 @@ function App() {
             type="video/mp4"
             muted
             loop
+            playsInline
           />
           <p>
             This was a group of 3 project and my final project for my KSU
@@ -151,6 +152,7 @@ function App() {
             src={CarVideo}
             type="video/mp4"
             muted
+            playsInline
             loop
           />
           <p>
@@ -178,6 +180,7 @@ function App() {
             type="video/mp4"
             muted
             loop
+            playsInline
           />
           <p>
             Although not complete, this is a solo project I am creating to
@@ -202,6 +205,7 @@ function App() {
             type="video/mp4"
             muted
             loop
+            playsInline
           />
           <p>
             This was my first solo project where I created a Dictionary that
