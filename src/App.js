@@ -71,11 +71,11 @@ function App() {
         <p>
           I found a passion for programming in the first year that I attended
           ESU for engineering. During that year, I took a class which led me to
-          a degree switch to Computer Science. In November of 2022, I married my
+          a degree switch to Computer Science. In November of 2021, I married my
           high school sweetheart who was attending classes in Manhattan, Kansas.
           I decided to take the KSU Software Development Bootcamp to get into
           the field of my dreams faster. I finished the Bootcamp in November of
-          2023 with a multitude of development skills.
+          2022 with a multitude of development skills.
         </p>
       </div>
       <hr id="skills" />
