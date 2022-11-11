@@ -55,7 +55,7 @@ function App() {
             Hello, I'm <span>Matt Weilert</span>
           </h1>
           <p>
-            Currently an <span>aspiring</span> software developer who's exited
+            Currently an <span>aspiring</span> software developer who's excited
             for his future.
           </p>
         </div>
@@ -73,9 +73,9 @@ function App() {
           ESU for engineering. During that year, I took a class which led me to
           a degree switch to Computer Science. In November of 2022, I married my
           high school sweetheart who was attending classes in Manhattan, Kansas.
-          I decided to take the KSU software development Bootcamp to get into
+          I decided to take the KSU Software Development Bootcamp to get into
           the field of my dreams faster. I finished the Bootcamp in November of
-          2023 where I learned a multitude of development skills.
+          2023 with a multitude of development skills.
         </p>
       </div>
       <hr id="skills" />
@@ -108,7 +108,7 @@ function App() {
           </div>
         </div>
         <p className="disc">
-          Although I am currently more comfortable with frontend development, I
+          Although I am currently more comfortable with front-end development, I
           am <span>Striving</span> to better my backend skills on my own time
           for future career use.
         </p>
@@ -118,7 +118,7 @@ function App() {
         <h2>Projects</h2>
         <p>
           <p>
-            <span>Hover</span> or <span>Click</span> to play example
+            <span>Hover</span> or <span>Click</span> to play an example.
           </p>
         </p>
         <div className="projects">
@@ -140,7 +140,7 @@ function App() {
             preload="auto"
           />
           <p>
-            This was a group of 3 project and my final project for my KSU
+            This was a group-of-three project and my final project for my KSU
             Bootcamp. We created a <span>CRUD</span> note-taking application
             that had a fully working signup and authentication page. This
             application had backend connectivity to <span>MongoDB</span>. I
@@ -172,7 +172,7 @@ function App() {
             preload="auto"
           />
           <p>
-            This was a group of 3 project. We created an appointment making
+            This was a group-of-three project. We created an appointment-making
             application for a body shop. This aplication has an interactive
             calender and backend connectivity to <span>PgAdmin</span>. I focused
             on the creation and style of the calendar along with helping to send
@@ -207,7 +207,7 @@ function App() {
           />
           <p>
             Although not complete, this is a solo project I am creating to
-            display the current and future weather of a searched Zip code using
+            display the current and future weather of a searched ZIP code using
             two <span>API's</span>.
           </p>
           <p>
@@ -250,7 +250,9 @@ function App() {
           </p>
         </div>
       </div>
-      <div id="footer">Contact me at MattWeilert@gmail.com</div>
+      <div id="footer">
+        Contact me at <span>MattWeilert@gmail.com</span>
+      </div>
     </div>
   );
 }
